@@ -1,1 +1,129 @@
-local _0x4e2c=['fromRGB','AddLeftGroupbox','AddRightGroupbox','AddToggle','Text','Default','Callback','Value','FindFirstChild','GetService','LocalPlayer','Character','SetPrimaryPartCFrame','CFrame','new','InvokeServer','rEvents','machineInteractRemote','useMachine','Backpack','Parent','muscleEvent','FireServer','AddLabel','SetText','string','format','wait','Workspace','machinesFolder','GetDescendants','Name','LeftHand','RightHand','Durability','firetouchinterest','autoFarm','while','task','spawn','Players','Humanoid','EquipTool','Punch','AddSlider','Min','Max','Rounding','Compact','AddButton','Callback','AddInput','Numeric','Finished','Kills','evilKarma','goodKarma','leaderstats','Strength','Agility','Rebirths','Changed','Connect','RunService','Heartbeat','AddTab','CreateWindow','Title','Footer','NotifySide','ShowCustomCursor','Right','HttpGet','Library.lua','addons/ThemeManager.lua','addons/SaveManager.lua'];(function(_0x587c87,_0x4e2c14){var _0x49ce9f=function(_0x3e5fc7){while(--_0x3e5fc7){_0x587c87['push'](_0x587c87['shift']())}};_0x49ce9f(++_0x4e2c14)}(_0x4e2c,0x96));var _0x49ce=function(_0x587c87,_0x4e2c14){_0x587c87=_0x587c87-0x0;var _0x49ce9f=_0x4e2c[_0x587c87];return _0x49ce9f};local _0x1a2b=_0x49ce;local _0x2c3d="https://raw.githubusercontent.com/deividcomsono/Obsidian/main/";local _0x3e4f=loadstring(game:HttpGet(_0x2c3d.._0x1a2b('0x0')))();local _0x4f5a=loadstring(game:HttpGet(_0x2c3d.._0x1a2b('0x1')))();local _0x5g6h=loadstring(game:HttpGet(_0x2c3d.._0x1a2b('0x2')))();local _0x6h7i=_0x3e4f['Options'];local _0x7i8j=_0x3e4f['Toggles'];_0x3e4f['ForceCheckbox']=false;_0x3e4f['ShowToggleFrameInKeybinds']=true;local _0x8j9k=_0x3e4f:CreateWindow({Title=_0x1a2b('0x3'),Footer='v1.0',NotifySide=_0x1a2b('0x4'),ShowCustomCursor=true,});local _0x9k0l={Main=_0x8j9k:AddTab('Main','settings'),Stats=_0x8j9k:AddTab('Stats','settings'),Client=_0x8j9k:AddTab('Client','settings'),Misc=_0x8j9k:AddTab('Misc','settings'),Server=_0x8j9k:AddTab('Server','settings'),Killer=_0x8j9k:AddTab('Killer','settings'),Stats2=_0x8j9k:AddTab('Stats 2','settings'),Teleport=_0x8j9k:AddTab('Teleport','settings'),Credits=_0x8j9k:AddTab('Credits','settings'),['UI Settings']=_0x8j9k:AddTab('UI Settings','sliders-horizontal'),};local _0xa0b1=game:GetService('Players');local _0xb1c2=_0xa0b1['LocalPlayer'];local _0xc2d3=game:GetService('RunService');local _0xd3e4=game:GetService('ReplicatedStorage');local _0xe4f5=game:GetService('Workspace');local _0xf5g6=game:GetService('Lighting');local _0xg6h7=_0x9k0l['Main']:AddLeftGroupbox('Brawl');local _0xh7i8=false;_0xg6h7:AddToggle('GodMode',{Text='God Mode (Brawl)',Default=false,Callback=function(_0xi8j9)_0xh7i8=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xh7i8 do game:GetService('ReplicatedStorage')['rEvents']['brawlEvent']:FireServer('joinBrawl');task.wait(0)end end)end end});local _0xj9k0=false;_0xg6h7:AddToggle('AutoJoin',{Text='Auto Join Brawl',Default=false,Callback=function(_0xi8j9)_0xj9k0=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xj9k0 do game:GetService('ReplicatedStorage')['rEvents']['brawlEvent']:FireServer('joinBrawl');task.wait(2)end end)end end});local _0xk0l1=_0x9k0l['Main']:AddLeftGroupbox('Auto Farm Gym');local _0xl1m2=false;_0xk0l1:AddToggle('MuscleKingBench',{Text='Auto Muscle King Bench',Default=false,Callback=function(_0xi8j9)_0xl1m2=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xl1m2 do game['Players']['LocalPlayer']['Character']:SetPrimaryPartCFrame(CFrame['new'](-8590.06152,46.0167427,-6043.34717));game:GetService('ReplicatedStorage')['rEvents']['machineInteractRemote']:InvokeServer('useMachine',_0xe4f5['machinesFolder']['Muscle King Bench']['interactSeat']);task.wait(0.1)end end)end end});local _0xm2n3=false;_0xk0l1:AddToggle('MuscleKingSquat',{Text='Auto Muscle King Squat',Default=false,Callback=function(_0xi8j9)_0xm2n3=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xm2n3 do game['Players']['LocalPlayer']['Character']:SetPrimaryPartCFrame(CFrame['new'](-8940.12402,13.1642084,-5699.13477));game:GetService('ReplicatedStorage')['rEvents']['machineInteractRemote']:InvokeServer('useMachine',_0xe4f5['machinesFolder']['Muscle King Squat']['interactSeat']);task.wait(0.1)end end)end end});local _0xn3o4=_0x9k0l['Main']:AddRightGroupbox('Auto Farm Jungle');local _0xo4p5=false;_0xn3o4:AddToggle('JungleBench',{Text='Auto Jungle Bench',Default=false,Callback=function(_0xi8j9)_0xo4p5=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xo4p5 do game['Players']['LocalPlayer']['Character']:SetPrimaryPartCFrame(CFrame['new'](-8629.88086,64.8842468,1855.03467));game:GetService('ReplicatedStorage')['rEvents']['machineInteractRemote']:InvokeServer('useMachine',_0xe4f5['machinesFolder']['Jungle Bench']['interactSeat']);task.wait(0.1)end end)end end});local _0xp5q6=false;_0xn3o4:AddToggle('JungleBarLift',{Text='Auto Jungle Bar Lift',Default=false,Callback=function(_0xi8j9)_0xp5q6=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xp5q6 do game['Players']['LocalPlayer']['Character']:SetPrimaryPartCFrame(CFrame['new'](-8678.05566,14.5030098,2089.25977));game:GetService('ReplicatedStorage')['rEvents']['machineInteractRemote']:InvokeServer('useMachine',_0xe4f5['machinesFolder']['Jungle Bar Lift']['interactSeat']);task.wait(0.1)end end)end end});local _0xq6r7=false;_0xn3o4:AddToggle('JungleSquat',{Text='Auto Jungle Squat',Default=false,Callback=function(_0xi8j9)_0xq6r7=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xq6r7 do game['Players']['LocalPlayer']['Character']:SetPrimaryPartCFrame(CFrame['new'](-8374.25586,34.5933418,2932.44995));game:GetService('ReplicatedStorage')['rEvents']['machineInteractRemote']:InvokeServer('useMachine',_0xe4f5['machinesFolder']['Jungle Squat']['interactSeat']);task.wait(0.1)end end)end end});local _0xr7s8=_0x9k0l['Main']:AddRightGroupbox('Auto Equip');local _0xs8t9=false;_0xr7s8:AddToggle('EquipWeight',{Text='Auto Equip Weight',Default=false,Callback=function(_0xi8j9)_0xs8t9=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xs8t9 do local _0xt9u0=game['Players']['LocalPlayer']['Backpack']:FindFirstChild('Weight');if _0xt9u0 then _0xt9u0['Parent']=game['Players']['LocalPlayer']['Character']end;task.wait(0.1)end end)end end});local _0xu0v1=false;_0xr7s8:AddToggle('EquipPushups',{Text='Auto Equip Pushups',Default=false,Callback=function(_0xi8j9)_0xu0v1=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xu0v1 do local _0xv1w2=game['Players']['LocalPlayer']['Backpack']:FindFirstChild('Pushups');if _0xv1w2 then _0xv1w2['Parent']=game['Players']['LocalPlayer']['Character']end;task.wait(0.1)end end)end end});local _0xv1w2=false;_0xr7s8:AddToggle('EquipSitups',{Text='Auto Equip Situps',Default=false,Callback=function(_0xi8j9)_0xv1w2=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xv1w2 do local _0xw2x3=game['Players']['LocalPlayer']['Backpack']:FindFirstChild('Situps');if _0xw2x3 then _0xw2x3['Parent']=game['Players']['LocalPlayer']['Character']end;task.wait(0.1)end end)end end});local _0xw2x3=false;_0xr7s8:AddToggle('EquipHandstand',{Text='Auto Equip Handstands',Default=false,Callback=function(_0xi8j9)_0xw2x3=_0xi8j9;if _0xi8j9 then task.spawn(function()while _0xw2x3 do local _0xx3y4=game['Players']['LocalPlayer']['Backpack']:FindFirstChild('Handstand');if _0xx3y4 then _0xx3y4['Parent']=game['Players']['LocalPlayer']['Character']end;task.wait(0.1)end end)end end});local _0xx3y4=_0x9k0l['Main']:AddLeftGroupbox('Rock Farm');function _0xy4z5()for _0xz5a6,_0xa6b7 in pairs(game['Players']['LocalPlayer']['Backpack']:GetChildren())do if _0xa6b7['Name']=='Punch'and game['Players']['LocalPlayer']['Character']:FindFirstChild('Humanoid')then game['Players']['LocalPlayer']['Character']['Humanoid']:EquipTool(_0xa6b7)end end;game:GetService('Players')['LocalPlayer']['muscleEvent']:FireServer('punch','leftHand');game:GetService('Players')['LocalPlayer']['muscleEvent']:FireServer('punch','rightHand')end;_0xx3y4:AddToggle('RockJungle10M',{Text='Auto Punch Jungle Rock (10M)',Default=false,Callback=function(_0xb7c8)getgenv()['autoFarm']=_0xb7c8;while getgenv()['autoFarm']do task.wait();if game:GetService('Players')['LocalPlayer']['Durability']['Value']>=10000000 then for _0xz5a6,_0xa6b7 in pairs(game:GetService('Workspace')['machinesFolder']:GetDescendants())do if _0xa6b7['Name']=='neededDurability'and _0xa6b7['Value']==10000000 and game['Players']['LocalPlayer']['Character']:FindFirstChild('LeftHand')and game['Players']['LocalPlayer']['Character']:FindFirstChild('RightHand')then firetouchinterest(_0xa6b7['Parent']['Rock'],game:GetService('Players')['LocalPlayer']['Character']['RightHand'],0);firetouchinterest(_0xa6b7['Parent']['Rock'],game:GetService('Players')['LocalPlayer']['Character']['RightHand'],1);firetouchinterest(_0xa6b7['Parent']['Rock'],game:GetService('Players')['LocalPlayer']['Character']['LeftHand'],0);firetouchinterest(_0xa6b7['Parent']['Rock'],game:GetService('Players')['LocalPlayer']['Character']['LeftHand'],1);_0xy4z5()end end end end end});local function _0xc8d9(_0xd0e1)if _0xd0e1>=1e15 then return string['format']('%.1fQa',_0xd0e1/1e15)elseif _0xd0e1>=1e12 then return string['format']('%.1fT',_0xd0e1/1e12)elseif _0xd0e1>=1e9 then return string['format']('%.1fB',_0xd0e1/1e9)elseif _0xd0e1>=1e6 then return string['format']('%.1fM',_0xd0e1/1e6)elseif _0xd0e1>=1e3 then return string['format']('%.1fK',_0xd0e1/1e3)else return tostring(_0xd0e1)end end;local _0xd0e1=_0x9k0l['Stats']:AddLeftGroupbox('Time & Strength');local _0xe1f2=_0x9k0l['Stats']:AddRightGroupbox('Durability & Agility');local _0xf2g3=_0x9k0l['Stats']:AddLeftGroupbox('Kills & Karma');local _0xg3h4={TimeSpentLabel=_0xd0e1:AddLabel('Time: 00:00'),StrengthGainedLabel=_0xd0e1:AddLabel('Strength: 0'),DurabilityGainedLabel=_0xe1f2:AddLabel('Durability: 0'),AgilityGainedLabel=_0xe1f2:AddLabel('Agility: 0'),KillsGainedLabel=_0xf2g3:AddLabel('Kills: 0'),EvilKarmaGainedLabel=_0xf2g3:AddLabel('Evil Karma: 0'),GoodKarmaGainedLabel=_0xf2g3:AddLabel('Good Karma: 0')};local function _0xh4i5()local _0xb1c2=game['Players']['LocalPlayer'];if not _0xb1c2 then return end;local _0xi5j6=_0xb1c2:WaitForChild('leaderstats');if not _0xi5j6 then return end;local _0xj6k7=_0xi5j6:WaitForChild('Strength');local _0xk7l8=_0xb1c2:WaitForChild('Durability');local _0xl8m9=_0xb1c2:WaitForChild('Agility');local _0xm9n0=_0xi5j6:WaitForChild('Kills');local _0xn0o1=_0xb1c2:WaitForChild('evilKarma');local _0xo1p2=_0xb1c2:WaitForChild('goodKarma');local _0xp2q3=_0xj6k7['Value']or 0;local _0xq3r4=_0xk7l8['Value']or 0;local _0xr4s5=_0xl8m9['Value']or 0;local _0xs5t6=_0xm9n0['Value']or 0;local _0xt6u7=_0xn0o1['Value']or 0;local _0xu7v8=_0xo1p2['Value']or 0;local _0xv8w9=tick();local function _0xw9x0()local _0xa0b1=_0xj6k7['Value']-_0xp2q3;local _0xb1c2=_0xk7l8['Value']-_0xq3r4;local _0xc2d3=_0xl8m9['Value']-_0xr4s5;local _0xd3e4=_0xm9n0['Value']-_0xs5t6;local _0xe4f5=_0xn0o1['Value']-_0xt6u7;local _0xf5g6=_0xo1p2['Value']-_0xu7v8;_0xg3h4['StrengthGainedLabel']:SetText('Strength: '.._0xc8d9(_0xa0b1));_0xg3h4['DurabilityGainedLabel']:SetText('Durability: '.._0xc8d9(_0xb1c2));_0xg3h4['AgilityGainedLabel']:SetText('Agility: '.._0xc8d9(_0xc2d3));_0xg3h4['KillsGainedLabel']:SetText('Kills: '.._0xc8d9(_0xd3e4));_0xg3h4['EvilKarmaGainedLabel']:SetText('Evil Karma: '.._0xc8d9(_0xe4f5));_0xg3h4['GoodKarmaGainedLabel']:SetText('Good Karma: '.._0xc8d9(_0xf5g6))end;local function _0xx0y1()local _0xy1z2=tick()-_0xv8w9;local _0xz2a3=math['floor'](_0xy1z2/60);local _0xa3b4=math['floor'](_0xy1z2%60);_0xg3h4['TimeSpentLabel']:SetText(string['format']('Time: %02d:%02d',_0xz2a3,_0xa3b4))end;_0xj6k7['Changed']:Connect(_0xw9x0);_0xk7l8['Changed']:Connect(_0xw9x0);_0xl8m9['Changed']:Connect(_0xw9x0);_0xm9n0['Changed']:Connect(_0xw9x0);_0xn0o1['Changed']:Connect(_0xw9x0);_0xo1p2['Changed']:Connect(_0xw9x0);game:GetService('RunService')['Heartbeat']:Connect(_0xx0y1);_0xw9x0()end;_0xh4i5();_0x4f5a:SetLibrary(_0x3e4f);_0x5g6h:SetLibrary(_0x3e4f);_0x5g6h:IgnoreThemeSettings();_0x5g6h:SetFolder('NeonHub/MuscleLegendsHub');_0x5g6h:BuildConfigSection(_0x9k0l['UI Settings']);_0x4f5a:ApplyTheme(_0x4f5a['Themes']['Dark']);_0x8j9k:SelectTab(1);print('✅ Muscle Legends Hub carregado com sucesso!')
+local _repo="https://raw.githubusercontent.com/deividcomsono/Obsidian/main/"
+local _lib=loadstring(game:HttpGet(_repo.."Library.lua"))()
+local _theme=loadstring(game:HttpGet(_repo.."addons/ThemeManager.lua"))()
+local _save=loadstring(game:HttpGet(_repo.."addons/SaveManager.lua"))()
+
+local _opts=_lib.Options
+local _toggles=_lib.Toggles
+
+_lib.ForceCheckbox=false
+_lib.ShowToggleFrameInKeybinds=true
+
+local _window=_lib:CreateWindow({
+    Title="Muscle Legends | Neon Hub",
+    Footer="v1.0",
+    NotifySide="Right",
+    ShowCustomCursor=true,
+})
+
+local _tabs={
+    Main=_window:AddTab("Main","settings"),
+    Stats=_window:AddTab("Stats","settings"),
+    Client=_window:AddTab("Client","settings"),
+    Misc=_window:AddTab("Misc","settings"),
+    Server=_window:AddTab("Server","settings"),
+    Killer=_window:AddTab("Killer","settings"),
+    Stats2=_window:AddTab("Stats 2","settings"),
+    Teleport=_window:AddTab("Teleport","settings"),
+    Credits=_window:AddTab("Credits","settings"),
+    ["UI Settings"]=_window:AddTab("UI Settings","sliders-horizontal"),
+}
+
+local _players=game:GetService("Players")
+local _lp=_players.LocalPlayer
+local _rs=game:GetService("RunService")
+local _replst=game:GetService("ReplicatedStorage")
+local _ws=game:GetService("Workspace")
+local _light=game:GetService("Lighting")
+
+local _brawl=_tabs.Main:AddLeftGroupbox("Brawl")
+local _godmode=false
+_brawl:AddToggle("GodMode",{Text="God Mode (Brawl)",Default=false,Callback=function(v)_godmode=v if v then task.spawn(function()while _godmode do game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl")task.wait(0)end end)end end})
+
+local _autojoin=false
+_brawl:AddToggle("AutoJoin",{Text="Auto Join Brawl",Default=false,Callback=function(v)_autojoin=v if v then task.spawn(function()while _autojoin do game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl")task.wait(2)end end)end end})
+
+local _farmgym=_tabs.Main:AddLeftGroupbox("Auto Farm Gym")
+local _mkb=false
+_farmgym:AddToggle("MuscleKingBench",{Text="Auto Muscle King Bench",Default=false,Callback=function(v)_mkb=v if v then task.spawn(function()while _mkb do game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-8590.06152,46.0167427,-6043.34717))game:GetService("ReplicatedStorage").rEvents.machineInteractRemote:InvokeServer("useMachine",workspace.machinesFolder["Muscle King Bench"].interactSeat)task.wait(0.1)end end)end end})
+
+local _mks=false
+_farmgym:AddToggle("MuscleKingSquat",{Text="Auto Muscle King Squat",Default=false,Callback=function(v)_mks=v if v then task.spawn(function()while _mks do game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-8940.12402,13.1642084,-5699.13477))game:GetService("ReplicatedStorage").rEvents.machineInteractRemote:InvokeServer("useMachine",workspace.machinesFolder["Muscle King Squat"].interactSeat)task.wait(0.1)end end)end end})
+
+local _jungle=_tabs.Main:AddRightGroupbox("Auto Farm Jungle")
+local _jb=false
+_jungle:AddToggle("JungleBench",{Text="Auto Jungle Bench",Default=false,Callback=function(v)_jb=v if v then task.spawn(function()while _jb do game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-8629.88086,64.8842468,1855.03467))game:GetService("ReplicatedStorage").rEvents.machineInteractRemote:InvokeServer("useMachine",workspace.machinesFolder["Jungle Bench"].interactSeat)task.wait(0.1)end end)end end})
+
+local _jbl=false
+_jungle:AddToggle("JungleBarLift",{Text="Auto Jungle Bar Lift",Default=false,Callback=function(v)_jbl=v if v then task.spawn(function()while _jbl do game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-8678.05566,14.5030098,2089.25977))game:GetService("ReplicatedStorage").rEvents.machineInteractRemote:InvokeServer("useMachine",workspace.machinesFolder["Jungle Bar Lift"].interactSeat)task.wait(0.1)end end)end end})
+
+local _js=false
+_jungle:AddToggle("JungleSquat",{Text="Auto Jungle Squat",Default=false,Callback=function(v)_js=v if v then task.spawn(function()while _js do game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(-8374.25586,34.5933418,2932.44995))game:GetService("ReplicatedStorage").rEvents.machineInteractRemote:InvokeServer("useMachine",workspace.machinesFolder["Jungle Squat"].interactSeat)task.wait(0.1)end end)end end})
+
+local _equip=_tabs.Main:AddRightGroupbox("Auto Equip")
+local _eqw=false
+_equip:AddToggle("EquipWeight",{Text="Auto Equip Weight",Default=false,Callback=function(v)_eqw=v if v then task.spawn(function()while _eqw do local t=game.Players.LocalPlayer.Backpack:FindFirstChild("Weight")if t then t.Parent=game.Players.LocalPlayer.Character end task.wait(0.1)end end)end end})
+
+local _eqp=false
+_equip:AddToggle("EquipPushups",{Text="Auto Equip Pushups",Default=false,Callback=function(v)_eqp=v if v then task.spawn(function()while _eqp do local t=game.Players.LocalPlayer.Backpack:FindFirstChild("Pushups")if t then t.Parent=game.Players.LocalPlayer.Character end task.wait(0.1)end end)end end})
+
+local _eqs=false
+_equip:AddToggle("EquipSitups",{Text="Auto Equip Situps",Default=false,Callback=function(v)_eqs=v if v then task.spawn(function()while _eqs do local t=game.Players.LocalPlayer.Backpack:FindFirstChild("Situps")if t then t.Parent=game.Players.LocalPlayer.Character end task.wait(0.1)end end)end end})
+
+local _eqh=false
+_equip:AddToggle("EquipHandstand",{Text="Auto Equip Handstands",Default=false,Callback=function(v)_eqh=v if v then task.spawn(function()while _eqh do local t=game.Players.LocalPlayer.Backpack:FindFirstChild("Handstand")if t then t.Parent=game.Players.LocalPlayer.Character end task.wait(0.1)end end)end end})
+
+local _rock=_tabs.Main:AddLeftGroupbox("Rock Farm")
+function _gettool()for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren())do if v.Name=="Punch"and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")then game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)end end game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch","leftHand")game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch","rightHand")end
+
+_rock:AddToggle("RockJungle10M",{Text="Auto Punch Jungle Rock (10M)",Default=false,Callback=function(s)getgenv().autoFarm=s while getgenv().autoFarm do task.wait()if game:GetService("Players").LocalPlayer.Durability.Value>=10000000 then for i,v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants())do if v.Name=="neededDurability"and v.Value==10000000 and game.Players.LocalPlayer.Character:FindFirstChild("LeftHand")and game.Players.LocalPlayer.Character:FindFirstChild("RightHand")then firetouchinterest(v.Parent.Rock,game:GetService("Players").LocalPlayer.Character.RightHand,0)firetouchinterest(v.Parent.Rock,game:GetService("Players").LocalPlayer.Character.RightHand,1)firetouchinterest(v.Parent.Rock,game:GetService("Players").LocalPlayer.Character.LeftHand,0)firetouchinterest(v.Parent.Rock,game:GetService("Players").LocalPlayer.Character.LeftHand,1)_gettool()end end end end end})
+
+local function _abbr(n)if n>=1e15 then return string.format("%.1fQa",n/1e15)elseif n>=1e12 then return string.format("%.1fT",n/1e12)elseif n>=1e9 then return string.format("%.1fB",n/1e9)elseif n>=1e6 then return string.format("%.1fM",n/1e6)elseif n>=1e3 then return string.format("%.1fK",n/1e3)else return tostring(n)end end
+
+local _sleft=_tabs.Stats:AddLeftGroupbox("Time & Strength")
+local _sright=_tabs.Stats:AddRightGroupbox("Durability & Agility")
+local _sleft2=_tabs.Stats:AddLeftGroupbox("Kills & Karma")
+
+local _labels={TimeSpentLabel=_sleft:AddLabel("Time: 00:00"),StrengthGainedLabel=_sleft:AddLabel("Strength: 0"),DurabilityGainedLabel=_sright:AddLabel("Durability: 0"),AgilityGainedLabel=_sright:AddLabel("Agility: 0"),KillsGainedLabel=_sleft2:AddLabel("Kills: 0"),EvilKarmaGainedLabel=_sleft2:AddLabel("Evil Karma: 0"),GoodKarmaGainedLabel=_sleft2:AddLabel("Good Karma: 0")}
+
+local function _initstats()
+    local plr=game.Players.LocalPlayer if not plr then return end
+    local ls=plr:WaitForChild("leaderstats") if not ls then return end
+    local str=ls:WaitForChild("Strength")
+    local dur=plr:WaitForChild("Durability")
+    local agi=plr:WaitForChild("Agility")
+    local kls=ls:WaitForChild("Kills")
+    local evk=plr:WaitForChild("evilKarma")
+    local gdk=plr:WaitForChild("goodKarma")
+    
+    local istr,idur,iagi,ikls,ievk,igdk=str.Value or 0,dur.Value or 0,agi.Value or 0,kls.Value or 0,evk.Value or 0,gdk.Value or 0
+    local start=tick()
+    
+    local function upd()
+        local sg,dg,ag,kg,eg,gg=str.Value-istr,dur.Value-idur,agi.Value-iagi,kls.Value-ikls,evk.Value-ievk,gdk.Value-igdk
+        _labels.StrengthGainedLabel:SetText("Strength: ".._abbr(sg))
+        _labels.DurabilityGainedLabel:SetText("Durability: ".._abbr(dg))
+        _labels.AgilityGainedLabel:SetText("Agility: ".._abbr(ag))
+        _labels.KillsGainedLabel:SetText("Kills: ".._abbr(kg))
+        _labels.EvilKarmaGainedLabel:SetText("Evil Karma: ".._abbr(eg))
+        _labels.GoodKarmaGainedLabel:SetText("Good Karma: ".._abbr(gg))
+    end
+    
+    local function uptime()
+        local t=tick()-start
+        local m,s=math.floor(t/60),math.floor(t%60)
+        _labels.TimeSpentLabel:SetText(string.format("Time: %02d:%02d",m,s))
+    end
+    
+    str.Changed:Connect(upd) dur.Changed:Connect(upd) agi.Changed:Connect(upd) kls.Changed:Connect(upd) evk.Changed:Connect(upd) gdk.Changed:Connect(upd)
+    _rs.Heartbeat:Connect(uptime) upd()
+end _initstats()
+
+_theme:SetLibrary(_lib)
+_save:SetLibrary(_lib)
+_save:IgnoreThemeSettings()
+_save:SetFolder("NeonHub/MuscleLegendsHub")
+_save:BuildConfigSection(_tabs["UI Settings"])
+_theme:ApplyTheme(_theme.Themes.Dark)
+_window:SelectTab(1)
+print("✅ Muscle Legends Hub carregado com sucesso!")

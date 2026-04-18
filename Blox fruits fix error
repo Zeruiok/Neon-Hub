@@ -2985,8 +2985,8 @@ end)
 local library = {}
 
 _G.Color = Color3.fromRGB(220, 0, 0) 
-_G.imageLogo = "rbxassetid://12940626152"
-_G.Logo = "rbxassetid://12940626152"
+_G.imageLogo = "rbxassetid://121191958430254"
+_G.Logo = "rbxassetid://121191958430254"
 _G.NameHub = "NeonHub" --  Hub
 _G.Title = "NeonHub | Blox Fruits" -- 
 -----------------------------------------------------------------

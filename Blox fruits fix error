@@ -3514,7 +3514,7 @@ UICorner.Parent = ImageButton
 		local Tab = Instance.new("TextButton")
 		local UICorner_3 = Instance.new("UICorner")
 		local UICorner_Tab = Instance.new("UICorner")
-		local ImageLabel = Instance.new("121191958430254")
+		local ImageLabel = Instance.new("ImageLabel")
 		local TextLabel = Instance.new("TextLabel")
 
 		FrameTab.Name = "FrameTab"
@@ -3556,7 +3556,7 @@ UICorner.Parent = ImageButton
 		ImageLabel.BackgroundTransparency = 1
 		ImageLabel.Position = UDim2.new(0, 10, 0.5, -9)
 		ImageLabel.Size = UDim2.new(0, 18, 0, 18)
-		ImageLabel.Image = "http://www.roblox.com/asset/?id=121191958430254" .. icon
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=" .. icon
 		ImageLabel.ImageColor3 = Color3.fromRGB(130, 130, 130)
 		ImageLabel.ImageTransparency = 0
 
